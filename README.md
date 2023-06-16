@@ -162,10 +162,13 @@ Please follow the [Substrate Docker instructions here](https://github.com/parity
 # ocw2
 1. 定义一个GitInfo数据结果，用于装载从github.com网站中获取的name、description、followers，
 <img width="684" alt="image" src="https://github.com/TerryTyh/ocw2/assets/120092281/abe5d1a7-7dec-4875-90f2-eea74517b005">
+
 2. Offchain_work里完成两件事：一是基于fetch_git_info()方法获取已封装了外部请求数据的GitInfo对象并打印，二是完成有签名负载的不签名交易
 <img width="795" alt="image" src="https://github.com/TerryTyh/ocw2/assets/120092281/e1f07a89-406b-458a-9f5b-eca69feb0e07">
+
 3. fetch_git_info方法：实现从https://api.github.com/orgs/substrate-developer-hub 获取 name、description、followers，存入GitInfo对象并返回
 <img width="827" alt="image" src="https://github.com/TerryTyh/ocw2/assets/120092281/13170c36-bfc3-414e-ab5b-59838488e167">
+
 4. 运行结果：
 <img width="1172" alt="image" src="https://github.com/TerryTyh/ocw2/assets/120092281/149abadb-fa8f-4441-926a-d9ad6b993afe">
 
